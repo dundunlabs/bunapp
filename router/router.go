@@ -23,3 +23,7 @@ func BindQuery(req bunrouter.Request, v any) error {
 
 	return json.Unmarshal(b, v)
 }
+
+func BindBody(req bunrouter.Request, v any) error {
+	return json.NewDecoder(req.Body).Decode(v)
+}
