@@ -3,4 +3,6 @@ go 1.19
 use (
   .
   ./example
+  ./x/errorhdr
+  ./x/panichdr
 )
